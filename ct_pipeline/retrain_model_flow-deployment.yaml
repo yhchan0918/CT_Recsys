@@ -1,0 +1,46 @@
+###
+### A complete description of a Prefect Deployment for flow 'retrain-model-flow'
+###
+name: retrain_model_simple
+description: null
+version: 24d9fea6245bb85538fa93501ae111aa
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+work_pool_name: default-agent-pool
+tags: []
+parameters: {}
+schedule:
+  interval: 180.0
+  anchor_date: '2023-03-04T14:40:01.792000+00:00'
+  timezone: UTC
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: retrain-model-flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 3ed354a0-b3df-43cc-aa57-85961fe1bace
+  _block_document_name: anonymous-5a837a88-0daf-48d0-8903-80362c3c2d50
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /Users/yhchan/Downloads/FYP/CT_of_recommendation_system/ct_pipeline
+entrypoint: ct_pipeline_flow.py:retrain_model_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-03-04T14:47:40.222382+00:00'

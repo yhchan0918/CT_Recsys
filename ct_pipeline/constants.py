@@ -1,6 +1,6 @@
 ENTITY_NAME = "yhchan0918"
 PROJECT_NAME = "CT_OF_AIRBNB_RECSYS"
-MODEL_REGISTRY_NAME = "Unsupervised_GraphSAGE"
+MODEL_REGISTRY_NAME = "Rating_Weighted_GraphSAGE_Registery"
 MODEL_NAME = "graphsage"
 RETRAINING_RUN_PREFIX = "retraining_run"
 SIMULATION_START_DATE = "2015-10-24"
@@ -8,11 +8,11 @@ MAX_START_DATE = "2022-10-24"
 REVIEWS_DATE_COL = "created_at"
 PRODUCTION_TAG = "production"
 LATEST_TAG = "latest"
-BEST_TAG = "best"
+ARCHIVED_TAG = "archived"
 TOTAL_MONTHS_PER_ITERATION = 12
 
-
-FEATURE_COLS = {
+COMMENT_EMBEDDING_DIMENSION = 384
+LISTING_COLS = {
     "all_cols": [
         "num_of_guest_capacity",
         "num_of_bedroom",
@@ -182,7 +182,6 @@ FEATURE_COLS = {
         "num_of_bedroom",
         "num_of_private_bedroom",
         "num_of_bed",
-        "num_of_room",
         "num_of_private_bath",
         "num_of_shared_bath",
         "num_of_studio",

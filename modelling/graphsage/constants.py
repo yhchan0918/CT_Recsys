@@ -13,7 +13,8 @@ TOTAL_MONTHS_PER_ITERATION = 12
 TRAIN_SPLIT_PERIOD_MONTHS = 10
 
 
-FEATURE_COLS = {
+COMMENT_EMBEDDING_DIMENSION = 384
+LISTING_COLS = {
     "all_cols": [
         "num_of_guest_capacity",
         "num_of_bedroom",
@@ -183,7 +184,6 @@ FEATURE_COLS = {
         "num_of_bedroom",
         "num_of_private_bedroom",
         "num_of_bed",
-        "num_of_room",
         "num_of_private_bath",
         "num_of_shared_bath",
         "num_of_studio",

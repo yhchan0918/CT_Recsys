@@ -50,13 +50,12 @@ if __name__ == "__main__":
     ]
     reviews = pd.read_parquet("../../data/processed/reviews_with_interactions.parquet")[cols]
     tmp = reviews.copy()
-    # 7.21
-    iteration = 1
+    iteration = 5
     unit = 200000
     start_idx = (iteration * unit) - unit
     end_idx = iteration * unit
     data_list = tmp.to_dict("records")[start_idx:end_idx]
-
+    print(iteration)
     print(len(data_list))
     result_dict = {}
     result_list = []

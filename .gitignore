@@ -1,16 +1,16 @@
 modelling/pinsage/data_processed
 modelling/pinsage/model.pt
 modelling/pinsage/state_dict.pt
-ct_pipeline/wandb
-ct_pipeline/test
-ct_pipeline/train
-ct_pipeline/models
-ct_pipeline/artifacts
-/wandb
-/test
-/train
-/models
-/artifacts
+wandb/
+test/
+train/
+models/
+artifacts/
+unsupervised_models/
+rating_weighted_models/
+best_models/
+eval_result/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
